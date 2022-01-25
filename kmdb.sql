@@ -89,15 +89,25 @@ CREATE TABLE cast_top(
 );
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
--- TODO!
+-- TODO! Movies
 INSERT INTO movies (title,year,rating,director)
 VALUES ("Batman Begins", "2005","PG-13","Christopher Nolan");
 
 INSERT INTO movies (title,year,rating,director)
-VALUES ("The Dark Knight", "2008","PG-13","Christopher Nolan");
+VALUES ("The Dark Knight", "Christian Bale","Christopher Nolan");
 
 INSERT INTO movies (title,year,rating,director)
 VALUES ("The Dark Knight Rises", "2012","PG-13","Christopher Nolan");
+
+-- TODO! Cast_top
+INSERT INTO cast_top (title,name,character)
+VALUES ("Batman Begins", "Cristian Bale","Bruce Wayne");
+
+INSERT INTO cast_top (title,name,character)
+VALUES ("Batman Begins", "Michael Caine","Alfred");
+
+INSERT INTO cast_top (title,name,character)
+VALUES ("Batman Begins", "Liam Neeson","Ra's Al Ghul");
 
 -- Prints a header for the movies output
 .print "Movies"
