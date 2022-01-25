@@ -94,7 +94,7 @@ INSERT INTO movies (title,year,rating,director)
 VALUES ("Batman Begins", "2005","PG-13","Christopher Nolan");
 
 INSERT INTO movies (title,year,rating,director)
-VALUES ("The Dark Knight", "Christian Bale","Christopher Nolan");
+VALUES ("The Dark Knight", "2008","Christian Bale","Christopher Nolan");
 
 INSERT INTO movies (title,year,rating,director)
 VALUES ("The Dark Knight Rises", "2012","PG-13","Christopher Nolan");
@@ -114,8 +114,6 @@ VALUES ("Batman Begins", "Katie Holmes ","Rachel Dawes");
 
 INSERT INTO cast_top (title,name,character)
 VALUES ("Batman Begins", "Gary Oldman","Commissioner Gordon");
-
-Dark Knight
 
 INSERT INTO cast_top (title,name,character)
 VALUES ("The Dark Knight", "Christian Bale","Bruce Wayne");
@@ -147,29 +145,20 @@ VALUES ("The Dark Knight Rises", "Joseph Gordon-Levitt","John Blake");
 INSERT INTO cast_top (title,name,character)
 VALUES ("The Dark Knight Rises", "Anne Hathaway","Selina Kyle");
 
-
-
-
-
-
-
-
-
-
 -- Prints a header for the movies output
 .print "Movies"
-.print "======"
-.print ""
+.print "Year"
+.print "Rating"
+.print "Director"
 
 -- The SQL statement for the movies output
 -- TODO!
-
+SELECT*FROM movies;
 -- Prints a header for the cast output
-.print ""
+.print "Movie"
 .print "Top Cast"
-.print "========"
-.print ""
-
+.print "Character"
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT * FROM cast_top;
