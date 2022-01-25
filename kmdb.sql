@@ -69,12 +69,35 @@
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 
+DROP TABLE IF EXISTS movies;
+DROP Table IF EXISTS cast_top;
+
+
 -- Create new tables, according to your domain model
 -- TODO!
+CREATE TABLE movies (
+    title TEXT, 
+    year INTEGER, 
+    rating TEXT, 
+    director TEXT
+);
 
+CREATE TABLE cast_top(
+    title TEXT,
+    name TEXT, 
+    character TEXT
+);
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+INSERT INTO movies (title,year,rating,director)
+VALUES ("Batman Begins", "2005","PG-13","Christopher Nolan");
+
+INSERT INTO movies (title,year,rating,director)
+VALUES ("The Dark Knight", "2008","PG-13","Christopher Nolan");
+
+INSERT INTO movies (title,year,rating,director)
+VALUES ("The Dark Knight Rises", "2012","PG-13","Christopher Nolan");
 
 -- Prints a header for the movies output
 .print "Movies"
